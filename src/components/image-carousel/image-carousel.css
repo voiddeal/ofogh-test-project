@@ -1,0 +1,34 @@
+.slick-list {
+  z-index: -10;
+}
+
+.slick-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  overflow: hidden;
+  left: 5% !important;
+  top: 60%;
+  margin-block: auto;
+  z-index: 1;
+  scale: 3;
+}
+
+.slick-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  right: 5% !important;
+  top: 60%;
+  margin-block: auto;
+  z-index: 1;
+  scale: 3;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  margin: auto;
+}
