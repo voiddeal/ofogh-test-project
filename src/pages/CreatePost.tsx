@@ -48,7 +48,7 @@ export default function CreatePost() {
     <div className="flex justify-center items-center min-h-[calc(100dvh-3rem)] bg-gray-100 p-4">
       <div className="w-full max-w-lg bg-white shadow-lg rounded-lg p-6">
         {/* Header */}
-        <h2 className="text-2xl font-bold text-center text-blue-600 mb-4">
+        <h2 className="text-2xl font-bold text-center text-teal-700 mb-4">
           :: Create a New Post ::
         </h2>
 
@@ -94,7 +94,7 @@ export default function CreatePost() {
 
           <button
             onClick={submitPost}
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
+            className="w-full bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-md"
           >
             Submit Post
           </button>
