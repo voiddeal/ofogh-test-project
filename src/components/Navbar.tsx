@@ -50,7 +50,6 @@ export default function Navbar() {
     <nav className="sticky top-0 flex items-center w-full h-12 bg-teal-200/80 backdrop-blur-md z-50 shadow">
       <button
         type="button"
-        // disabled={navigationType === "PUSH" ? false : true}
         className="ml-4 mr-6 cursor-pointer disabled:cursor-not-allowed text-teal-800"
         title="Go Back"
       >
