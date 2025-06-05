@@ -5,15 +5,6 @@ import HomeGelAnimation from "../components/HomeGelAnimation"
 export default function HomePage() {
   return (
     <main className="relative w-dvw">
-      {/* <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="fixed left-0 w-dvw  h-dvh object-cover -z-10"
-      >
-        <source src="home-bg.mp4" type="video/mp4" />
-      </video> */}
       <img
         src="home-bg.jpg"
         alt="image background"
@@ -25,8 +16,6 @@ export default function HomePage() {
           <img
             src={monitorImage}
             alt="Monitor Image"
-            // sizes="100vw"
-            // srcSet="monitor.png 1920w, monitor-small.png 1280w"
             className="size-full object-contain"
           />
           <ImageCarousel />

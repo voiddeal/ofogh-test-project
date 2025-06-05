@@ -35,7 +35,10 @@ const initialToastValue: ToastProps = {
 const highlightMatch = (text: string, search: string): string => {
   if (!search) return text
   const regex = new RegExp(`(${search})`, "gi")
-  return text.replace(regex, `<span class="bg-yellow-300 font-bold">$1</span>`)
+  return text.replace(
+    regex,
+    `<span class="bg-yellow-300 font-bold text-black">$1</span>`
+  )
 }
 
 export default function Posts() {
@@ -244,6 +247,7 @@ export default function Posts() {
     <main>
       <TileBG opacity={0.6} />
       <div className=" md:px-14 py-8 shadow-md text-black">
+        {/* Buttons */}
         <div className="flex items-center mb-4 gap-x-4 max-md:px-4">
           <div className="w-fit flex items-center bg-emerald-200 rounded">
             <input
@@ -268,6 +272,7 @@ export default function Posts() {
             Export to Excel
           </button>
         </div>
+        {/* Table */}
         <table className="w-full border bg-stone-800 text-[#e9e9e9]">
           <thead>
             <tr>
@@ -301,7 +306,7 @@ export default function Posts() {
             ))}
           </tbody>
         </table>
-
+        {/* Pagination */}
         <div className="flex justify-center items-center gap-x-4 mt-4">
           <button
             className="px-4 py-2 bg-teal-400 hover:bg-teal-500 text-white rounded disabled:opacity-50 cursor-pointer"
@@ -325,6 +330,7 @@ export default function Posts() {
           </button>
         </div>
       </div>
+
       {commentModalDisplay && (
         <Portal containerId="modal">
           <Modal backdropClickHandler={closeCommentsModal}>
